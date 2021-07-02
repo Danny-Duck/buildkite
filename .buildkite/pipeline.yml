@@ -1,3 +1,11 @@
   steps:
   - command: "echo \"hello world\""
     label: "echo test"
+
+  - command: echo "building container" && docker build . -t  test_container
+    label: 'building container'
+    plugins:
+      - docker-compose#v3.7.0:
+          run: app
+          config:
+            - docker-compose.yml

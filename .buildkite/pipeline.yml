@@ -1,4 +1,3 @@
-# Default pipeline from cli
-steps:
-- label: ":pipeline:"
-  command: buildkite-agent pipeline upload
+  steps:
+  - command: "echo \"hello world\""
+    label: "echo test"

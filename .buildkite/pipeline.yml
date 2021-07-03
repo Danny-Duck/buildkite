@@ -5,6 +5,6 @@ steps:
   - label: ':docker: building container'
     key: build
     plugins:
-      - "./plugins/docker-compose-buildkite-plugin":
+      - "/Users/danny/Library/Mobile Documents/com~apple~CloudDocs/Documents/dev/projects/buildkite/.buildkite/plugins/docker-compose-buildkite-plugin":
           config: ../docker-compose.yml
           build: app

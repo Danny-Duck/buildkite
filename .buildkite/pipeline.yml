@@ -6,5 +6,5 @@ steps:
     key: build
     plugins:
       - docker-compose#v3.7.0:
-          config: docker-compose.yml
+          config: ../docker-compose.yml
           build: app
